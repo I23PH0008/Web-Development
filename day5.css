@@ -1,0 +1,341 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+:root{
+   --main-color:rgb(172, 104, 240);
+}
+*{
+font: 'Roboto',sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+text-transform: capitalize;
+border:none ;
+outline: none;
+transition: all .2s linear;
+line-height: 1.5;
+
+
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+body{
+    display: flex;
+    flex-flow: column;
+    overflow-x: hidden;
+    background-color: antiquewhite;
+
+}
+header{
+    background-color: var(--main-color);
+    position: fixed;
+    height: 100%;
+    width: 25rem;
+    display: flex;
+    top: 0; left: 0; bottom: 0;
+    flex-flow: column;
+    align-items: center;
+    gap: 4rem;
+
+}
+header img{
+    width: 15rem;
+    height: 15rem;
+    margin-top: 3rem;
+    border: #eee solid .5rem;
+    border-radius: 50%;
+
+}
+.nav-links{
+    width: 95%;
+    display: flex;
+    flex-flow: column;
+    gap: 3rem;
+    align-items: center;
+    color: #eee;
+
+}
+.nav-links a{
+    font-size:2rem ;
+    color: #eee;
+    letter-spacing: .3rem;
+
+}
+.nav-links a:hover{
+    background: #f4ecec;
+    width: 90%;
+    text-align: center;
+    padding: 0.2em;
+    border-radius: 2rem;
+    color: var(--main-color);
+
+}
+.main{
+    padding: 27rem;
+
+}
+.home{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.home h3{
+    font-size: 4rem;
+    font-weight: 300;
+
+
+}
+.home h1{
+    font-weight: 400;
+font-size: 5rem;
+
+}
+.home h1{
+    color: var(--main-color);
+    
+}
+.home p{
+    font-size:3rem ;
+    font-weight: 300;
+
+}
+/* About Section */
+.about{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    gap: 1.5rem;
+    justify-content: center
+    ;
+}
+.about .title{
+font-size: 5rem;
+font-weight: 400;
+
+}
+.about .title span{
+color: var(--main-color);
+
+}
+.about p{
+font-size: 2rem;
+font-weight: 300;
+
+}
+.about span{
+color: var(--main-color);
+}
+
+/* Slills section */
+.skillss p{
+    font-size: 2.5rem;
+
+}
+.skillss h1 span{
+    color: var(--main-color);
+
+}
+.skillss .title{
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.row{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    gap: 1rem;
+    justify-content: center;
+
+}
+.row .skills{
+    width: 50%;
+}
+.row .highlights{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.row .highlights .box{
+    display: flex;
+    width: 48%;
+    border-radius: 2rem;
+    background-color: aliceblue;
+    padding: 2rem;
+    box-shadow: .3rem .3rem .5rem gray;
+    gap: 1rem;
+    
+
+
+}
+
+
+.row .highlights .box h3{
+    color: rgb(53, 170, 220);
+    font: 3rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+
+}
+.row .highlights .box p{
+    font-size: 2rem;
+    font-weight: 300;
+
+
+}
+/* experience section */
+.experience{
+
+ display: flex; 
+    flex-flow: column;
+    min-height: 100vh;
+    gap: 1rem;
+    justify-content: center;
+}
+.experience .title{
+    font-size: 5rem;
+    font-weight: 400;
+    
+    }
+    .experience .title span{
+    color: var(--main-color);
+    
+    }
+    .exp{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+    }
+    .exp .box{
+        display: flex;
+        flex-flow: column;
+        gap: .7rem;
+        width: 48%;
+        background-color: #fff;
+        padding: 2rem;
+        box-shadow: .3rem .3rem .5rem gray;
+        border-radius: 2rem;
+
+    }
+    .exp .box .profile{
+        font-size: 2.5rem;
+        color: rgb(53, 170, 220);
+
+    }
+    .exp .box .company{
+        font-size: 1.5rem;
+        color: rgb(97, 97, 97);
+        font-weight: 400;
+
+    }
+    .exp .box .work{
+        font-size: 1.2rem;
+        font-weight: 400;
+
+    }
+    .exp .box .work .ul{
+        list-style: none;
+
+
+    }
+    .exp .box .duration{
+        align-self:flex-end ;
+        color: var(--main-color);
+        font-size: 1.2rem;
+        font-weight: 500;
+
+
+    }
+    .projects{
+        display: flex;
+        flex-flow: column;
+        min-height: 100vh;
+        gap: 1rem;
+        justify-content: center
+        ;   
+    }
+    .projects .title{
+        font-size: 5rem;
+        font-weight: 400;
+        
+        }
+        .projects .title span{
+        color: var(--main-color);
+        
+        }
+        .projects .list{
+            border-left: var(--main-color) solid .5rem;
+
+        }
+        .projects .list ul{
+            list-style: none;
+
+        }
+        .projects .list ul li{
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 3rem;
+
+        }
+        .projects .list ul li span{
+            color: var(--main-color);
+            font-weight: 500;
+
+
+        }
+        /* contact */
+.contact{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    gap: 1rem;
+    justify-content: center;   
+}
+.contact .title{
+    font-size: 5rem;
+    font-weight: 400;
+    
+    }
+    .contact .title span{
+    color: var(--main-color);
+    
+    }
+    .contact .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.7rem;
+
+    }
+    .container .details{
+        font-size: 2.5rem;
+        width: 47%;
+    }
+    .container .sm-details{
+        font-size: 2.5rem;
+        width: 47%;
+    }
+    i{
+        columns: var(--main-color);
+        width: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+    
+
+        
+
+    
+ 
+
